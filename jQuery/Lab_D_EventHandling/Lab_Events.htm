@@ -12,8 +12,21 @@
 
         $(document).ready(function () {
             // 在這裏寫程式
-            
-            
+            $("#btnTry").click(()=>{console("btn Clicked")})
+            $("#panda").on({
+                "mouseover":()=>{
+                    $(this).prop("src","panda2.jpg")
+                    console("mouseIN")
+                },
+                "mouseout":()=>{
+                    $(this).prop("src","panda1.jpg")
+                    console("mouseOUT")
+                },
+                "click":()=>{
+                    console("imgClicked");
+                }
+            }
+            )
             
             
             

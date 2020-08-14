@@ -7,14 +7,15 @@
         $(document).ready(function () {
             $("#btnTry").click(function () {
                 // 在這裏寫程式
+                $("#report").append("line1<br>Line2");
+                var s = $("input[name='radioGroup']").eq(2).attr("checked", "checked");
+                $("#report").append("radio C selected.");
+                
+                console.log();
+                
+                
                 
 
-
-                
-
-                
-                
-                
             })
         });
     </script>
